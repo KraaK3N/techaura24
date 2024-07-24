@@ -1,0 +1,29 @@
+#navlinks {
+    color : #ffffff;
+    font-family: Sans-serif;
+    font-size : 17px;
+    transition : color 0.3s;
+    transition-timing-function: ease-out;
+}
+
+#navlinks:hover {
+    color : #ea8ffc;
+}
+
+#navlogo_text {
+    color : #ededed;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.bg-translucent {
+    background-color: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px);
+}
+
+#body{
+    background-image: url("../static/images/robot.jpg");
+    background-position-x: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
