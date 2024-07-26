@@ -7,3 +7,7 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+@app.route("/events")
+def events():
+    return render_template("events.html")
+
