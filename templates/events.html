@@ -2,6 +2,10 @@
 
 {% block body %}
     <div id="event_front">
+        <div>
+            <video src="../static/video/video1.mp4" class="eventpage_video" autoplay loop></video>
+        </div>
+        
         <p id="welcome_text">WELCOME TO TECHAURA 2024</p>
         <h1 id="event_text"> EVENTS </h1>
         <p id="event_des"> Experience a vibrant tech fest featuring exhilarating games,
@@ -11,8 +15,12 @@
 
     <div id="event_card">
         <div id="tabs">
-            <div class="tab" data-target="general">General Events</div>
-            <div class="tab" data-target="departmental">Departmental Events</div>
+            <div class="tab" data-target="general">
+                <button class="boton-elegante">General Events</button>           
+            </div>
+            <div class="tab" data-target="departmental">
+                <button class="boton-elegante">Departmental Events</button> 
+            </div>
         </div>
 
         <div id="content">
