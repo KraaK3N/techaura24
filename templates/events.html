@@ -1,104 +1,130 @@
 {% extends "layout.html" %}
 
 {% block body %}
-    <style>
-        body {
-            background-color: #000000;
-        }
-    </style>
-    <div id="event_front">
-        <div>
-            <video src="../static/video/video1.mp4" class="eventpage_video" autoplay loop></video>
-        </div>
-        
-        <p id="welcome_text">WELCOME TO TECHAURA 2024</p>
-        <h1 id="event_text"> EVENTS </h1>
-        <p id="event_des"> Experience a vibrant tech fest featuring exhilarating games,
-             robots, thrilling competitions, and a display of innovations and talent!  
-        </p>
+<style>
+    body {
+        background-color: black;
+    }
+</style>
+<div id="event_front">
+    <div>
+        <video src="../static/video/video1.mp4" class="eventpage_video" autoplay loop muted></video>
     </div>
 
-    <div id="event_card">
-        <div id="tabs">
-            <div class="tab" data-target="general">
-                <button class="boton-elegante">General Events</button>           
-            </div>
-            <div class="tab" data-target="departmental">
-                <button class="boton-elegante">Departmental Events</button> 
+    <p id="welcome_text">WELCOME TO TECHAURA 2024</p>
+    <h1 id="event_text"> EVENTS </h1>
+    <p id="event_des"> Experience a vibrant tech fest featuring exhilarating games,
+        robots, thrilling competitions, and a display of innovations and talent!
+    </p>
+</div>
+
+<div id="event_card">
+    <div id="tabs">
+        <div class="tab" data-target="general">
+            <button class="boton-elegante">General Events</button>
+        </div>
+        <div class="tab" data-target="departmental">
+            <button class="boton-elegante">Departmental Events</button>
+        </div>
+    </div>
+
+
+    <div id="content">
+        <!-- The popup window container -->
+        <div id="popup-container" class="popup-container">
+            <!-- The popup window itself -->
+            <div class="popup-window">
+                <!-- Close button -->
+                <button class="close-button">&times;</button>
+                <!-- Content area -->
+                <div class="content-area">
+                    <!-- Event details -->
+                    <div class="event-details">
+                        <img src="https://via.placeholder.com/200x200" alt="Event Image">
+                        <div class="event-info">
+                            <h2>Event Name</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor,
+                                vestibulum magna sed, convallis ex.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet urna et orci
+                                vehicula varius.</p>
+                            <p>Curabitur sit amet justo vel erat vehicula sodales. Phasellus malesuada neque vel nibh
+                                interdum, nec laoreet risus cursus.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div id="content">
-            <div id="general" class="tab-content">
-                <div id="gevent_card">
-                    <div class="card" id="ge_card1">
-                        <p class="heading">general</p>
-                        <p>Powered By</p>
-                        <p>Uiverse</p>
-                    </div>
-                    <div class="card" id="ge_card2">
-                        <p class="heading">general</p>
-                        <p>Powered By</p>
-                        <p>Uiverse</p>
-                    </div>
-                    <div class="card" id="ge_card3">
-                        <p class="heading">general</p>
-                        <p>Powered By</p>
-                        <p>Uiverse</p>
-                    </div>
-                    <div class="card" id="ge_card4">
-                        <p class="heading">general</p>
-                        <p>Powered By</p>
-                        <p>Uiverse</p>
-                    </div>
-                    <div class="card" id="ge_card5">
-                        <p class="heading">general</p>
-                        <p>Powered By</p>
-                        <p>Uiverse</p>
-                    </div>
-                    <div class="card" id="ge_card6">
-                        <p class="heading">general</p>
-                        <p>Powered By</p>
-                        <p>Uiverse</p>
-                    </div>
-                </div>  
+
+        <div id="general" class="tab-content">
+            <div id="gevent_card">
+                <div class="card" id="ge_card1">
+                    <p class="heading">[Event Name]</p>
+                    <p>Some description about the event, we can also attach the rules to a link</p>
+                    <button class="view-details-button">View Details</button>
+                </div>
+                <div class="card" id="ge_card2">
+                    <p class="heading">general</p>
+                    <p>Powered By</p>
+                    <button class="view-details-button">View Details</button>
+                </div>
+                <div class="card" id="ge_card3">
+                    <p class="heading">general</p>
+                    <p>Powered By</p>
+                    <p>Uiverse</p>
+                </div>
+                <div class="card" id="ge_card4">
+                    <p class="heading">general</p>
+                    <p>Powered By</p>
+                    <p>Uiverse</p>
+                </div>
+                <div class="card" id="ge_card5">
+                    <p class="heading">general</p>
+                    <p>Powered By</p>
+                    <p>Uiverse</p>
+                </div>
+                <div class="card" id="ge_card6">
+                    <p class="heading">general</p>
+                    <p>Powered By</p>
+                    <p>Uiverse</p>
+                </div>
             </div>
-            <div id="departmental" class="tab-content">
-                <div id="gevent_card">
-                    <div class="card" id="de_card1">
-                        <p class="heading">departmental</p>
-                        <p>Powered By</p>
-                        <p>Uiverse</p>
-                    </div>
-                    <div class="card" id="de_card2">
-                        <p class="heading">departmental</p>
-                        <p>Powered By</p>
-                        <p>Uiverse</p>
-                    </div> 
-                    <div class="card" id="de_card2">
-                        <p class="heading">departmental</p>
-                        <p>Powered By</p>
-                        <p>Uiverse</p>
-                    </div>
-                    <div class="card" id="de_card4">
-                        <p class="heading">departmental</p>
-                        <p>Powered By</p>
-                        <p>Uiverse</p>
-                    </div>
-                    <div class="card" id="de_card5">
-                        <p class="heading">departmental</p>
-                        <p>Powered By</p>
-                        <p>Uiverse</p>
-                    </div> 
-                    <div class="card" id="de_card6">
-                        <p class="heading">departmental</p>
-                        <p>Powered By</p>
-                        <p>Uiverse</p>
-                    </div>    
-                </div>    
+        </div>
+        <div id="departmental" class="tab-content">
+            <div id="gevent_card">
+                <div class="card" id="de_card1">
+                    <p class="heading">departmental</p>
+                    <p>Powered By</p>
+                    <p>Uiverse</p>
+                </div>
+                <div class="card" id="de_card2">
+                    <p class="heading">departmental</p>
+                    <p>Powered By</p>
+                    <p>Uiverse</p>
+                </div>
+                <div class="card" id="de_card2">
+                    <p class="heading">departmental</p>
+                    <p>Powered By</p>
+                    <p>Uiverse</p>
+                </div>
+                <div class="card" id="de_card4">
+                    <p class="heading">departmental</p>
+                    <p>Powered By</p>
+                    <p>Uiverse</p>
+                </div>
+                <div class="card" id="de_card5">
+                    <p class="heading">departmental</p>
+                    <p>Powered By</p>
+                    <p>Uiverse</p>
+                </div>
+                <div class="card" id="de_card6">
+                    <p class="heading">departmental</p>
+                    <p>Powered By</p>
+                    <p>Uiverse</p>
+                </div>
             </div>
         </div>
     </div>
-    
+</div>
 
 {% endblock %}
