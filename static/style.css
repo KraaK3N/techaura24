@@ -166,6 +166,18 @@ transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
 #ge_card6{
     background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/robot.jpg');    
 }
+#ge_card7{
+  background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/robot.jpg');    
+}
+#ge_card8{
+  background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/robot.jpg');    
+}
+#ge_card9{
+  background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/robot.jpg');    
+}
+#ge_card10{
+  background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/robot.jpg');    
+}
 
 #de_card1{
     background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/background.png');
@@ -185,6 +197,32 @@ transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
 #de_card6{
     background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/background.png');
 }
+#de_card7{
+  background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/background.png');
+}
+#de_card8{
+  background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/background.png');
+}
+#de_card9{
+  background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/background.png');
+}
+#de_card10{
+  background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/background.png');
+}
+
+#es_card1{
+  background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/background.png');
+}
+#es_card2{
+  background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/background.png');
+}
+#es_card3{
+  background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/background.png');
+}
+#es_card4{
+  background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/background.png');
+}
+
 
 
 
@@ -273,6 +311,7 @@ transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
     background-color: rgba(0, 0, 0, 0.5); /* Dark overlay background */
     display: none;
     z-index: 1000; /* Ensure popup is above other content */
+    
   }
   
   /* Popup window styles */
@@ -283,11 +322,14 @@ transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
     transform: translate(-50%, -50%);
     width: 80%;
     max-width: 800px;
-    background-color: #fff;
+    background-color: #000;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     z-index: 1001; /* Ensure popup window is above the overlay */
+    color: #fff;
+    background-image: url("../static/images/popupimg.jpg");
+    background-size: cover;
   }
   
   /* Close button styles */
@@ -300,6 +342,7 @@ transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
     background: none;
     border: none;
     outline: none;
+    color: #fff;
   }
   
   /* Content area styles */
@@ -424,4 +467,17 @@ transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
     -moz-transition: box-shadow 0.2s ease-in;
     transition: box-shadow 0.2s ease-in;
   }
+
+  .button-link {
+    background-color: #086ebc;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
   
+  .button-link:hover {
+    background-color: #2b47d4;
+    color: #ffffff;
+  }
