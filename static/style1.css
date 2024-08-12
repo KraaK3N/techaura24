@@ -1,14 +1,98 @@
-.content {
-    width: 100%;
-    position: absolute;
-    top: 40%;
-    transform: translateY(-50%);
-    text-align: center;
-    color: #f5f5f5;
+
+.main_glow {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers content horizontally as well */
+    aspect-ratio: 16/10;
+    color: #fff;
+    padding: 20px; /* Adds padding inside the container */
+    border-radius: 8px; /* Rounds the corners of the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow for a glowing effect */
 }
-.content h1{
-    font-size: 70px;
-    margin-top: 25px;
-    margin-bottom: 20px;
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .main_glow {
+        aspect-ratio: 4/3; /* Adjust aspect ratio for smaller screens */
+    }
+}
+.glowing
+{
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    line-height: 50px;
     text-align: center;
+    text-transform: uppercase;
+    border: 5px solid rgba(255, 255, 255, 0.4);
+    margin: 0 -1px;
+    animation: animate 2s linear infinite;
+}
+@keyframes animate {
+    0% {
+        color: #FF0000; /* Red */
+        box-shadow: 0 4px 15px rgba(255, 0, 0, 0.8);
+        border: 2px solid rgba(255, 0, 0, 0.8);
+    }
+    14% {
+        color: #FF7518; /* Pumpkin Orange */
+        box-shadow: 0 4px 15px rgba(255, 117, 24, 0.8);
+        border: 2px solid rgba(255, 117, 24, 0.8);
+    }
+    28% {
+        color: #FFFF00; /* Yellow */
+        box-shadow: 0 4px 15px rgba(255, 255, 0, 0.8);
+        border: 2px solid rgba(255, 255, 0, 0.8);
+    }
+    42% {
+        color: #3FFF00; /* Harlequin Green */
+        box-shadow: 0 4px 15px rgba(63, 255, 0, 0.8);
+        border: 2px solid rgba(63, 255, 0, 0.8);
+    }
+    57% {
+        color: #2E8B57; /* Sea Green */
+        box-shadow: 0 4px 15px rgba(46, 139, 87, 0.8);
+        border: 2px solid rgba(46, 139, 87, 0.8);
+    }
+    71% {
+        color: #120A8F; /* Ultramarine */
+        box-shadow: 0 4px 15px rgba(18, 10, 143, 0.8);
+        border: 2px solid rgba(18, 10, 143, 0.8);
+    }
+    85% {
+        color: #FF6FFF; /* Shocking Pink */
+        box-shadow: 0 4px 15px rgba(255, 111, 255, 0.8);
+        border: 2px solid rgba(255, 111, 255, 0.8);
+    }
+    100% {
+        color: #FF0000; /* Red */
+        box-shadow: 0 4px 15px rgba(255, 0, 0, 0.8);
+        border: 2px solid rgba(255, 0, 0, 0.8);
+    }
+}
+
+
+.glowing:nth-child(1) {
+    animation-delay: 0s;
+}
+.glowing:nth-child(2) {
+    animation-delay: 0.1s;
+}
+.glowing:nth-child(3) {
+    animation-delay: 0.2s;
+}
+.glowing:nth-child(4) {
+    animation-delay: 0.3s;
+}
+.glowing:nth-child(5) {
+    animation-delay: 0.4s;
+}
+.glowing:nth-child(6) {
+    animation-delay: 0.5s;
+}
+.glowing:nth-child(7) {
+    animation-delay: 0.6s;
+}
+.glowing:nth-child(8) {
+    animation-delay: 0.7s;
 }
