@@ -109,14 +109,14 @@
     animation-delay: 0.7s;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 450px) {
     .glowing {
-        width: 30px;
-        height: 30px;
-        font-size: 25px;
-        line-height: 30px;
+        width: 35px;
+        height: 35px;
+        font-size: 30px;
+        line-height: 35px;
         border: 1px solid rgba(255, 255, 255, 0.6); 
-        border-radius: 5%;
+        border-radius: 7%;
         animation: animate 7s linear infinite;
     }
 }
