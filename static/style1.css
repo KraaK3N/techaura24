@@ -109,7 +109,7 @@
     animation-delay: 0.7s;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 700px) {
     .glowing {
         width: 30px;
         height: 30px;
