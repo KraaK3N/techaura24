@@ -211,16 +211,16 @@ transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
 }
 
 #es_card1{
-  background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/background.png');
+  background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/eventsimage/mlbb.jpg');
 }
 #es_card2{
-  background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/background.png');
+  background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/eventsimage/bgmi.png');
 }
 #es_card3{
-  background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/background.png');
+  background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/eventsimage/fifa.png');
 }
 #es_card4{
-  background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/background.png');
+  background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/eventsimage/dota.png');
 }
 
 
@@ -236,7 +236,7 @@ transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
     flex-direction: row;
     justify-content: space-around ;
     flex-wrap: wrap;
-    margin: 0% 12% 0%;
+    margin: 3% 12% -3%;
 }
 .tab-content { display: none; }
 .active { display: block; }
@@ -404,7 +404,7 @@ transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 2px;
-    background: transparent;
+    background: rgba(82, 82, 82, 0.4);
     color: #fff;
     overflow: hidden;
     box-shadow: 0 0 0 0 transparent;
@@ -536,7 +536,6 @@ justify-content: center;
 }
 #galleryheader{
 font-size: 2em;
-
 font-weight: 700;
 color: white;
 }
@@ -555,3 +554,128 @@ background: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     background-image: url("../static/images/icons8-menu-bar.svg");
 }
 
+.card2 {
+  position: relative;
+  width: 270px;
+  height: 362px;
+  background-color: #000000 !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  margin: 6%;
+  background-size: cover; 
+  background-position: center;
+  padding: 20px;
+  background-image: linear-gradient(rgba(0,0,0,0.1),#000);
+}
+
+.card2::before {
+content: '';
+position: absolute;
+inset: 0;
+left: -3px;
+margin: auto;
+width: 276px;
+height: 367px;
+border-radius: 10px;
+/* background: linear-gradient(-45deg,  #005DBB 0%, #17C969 100% ); */
+z-index: -10;
+pointer-events: none;
+transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.cardgrad1::before{
+  background: linear-gradient(-45deg, #1BA774 0%, #48B768 100%);
+}
+
+.cardgrad2::before{
+  background: linear-gradient(-45deg, #A20BD8 0%, #FF4040 100%);
+}
+
+.cardgrad3::before{
+  background: linear-gradient(-45deg, #DA0E64 0%, #E65F6E 100%);
+}
+#contactcards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;   
+  padding: 20px;
+  flex-wrap: wrap;
+}
+#contact_header{
+  margin-top: 6%;
+  /* background-color: pink; */
+  font-size: 1.6em;
+  font-weight: 200; 
+}
+.button_contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border: none;
+  background-color: #30C04F;
+  
+  margin: 0% 0% 15% 38%;
+}
+
+.button_contact:hover {
+  background-color: #2bac47;
+}
+#contact_card1{
+  font-size: 1.4em;
+}
+#contact_phone{
+  text-align: center;
+}
+#contact_number{
+  text-align: center;
+  margin: 0%;
+}
+#instagram_icon{
+  background-color: #000000;
+  margin: 0% 0% 65% 38%;
+}
+#insta_icon{
+  width: 75px; /* Set the desired width */
+  height: 75px; /* Set the desired height */
+  background-color: #000000;
+}
+#contact_insta{
+  text-align: center;
+  font-size: 1.4em;
+  color: #ffffff;
+  margin-top:20% ;
+}
+#contact_instatag{
+  text-align: center;
+  font-size: 1.4em;
+  color: #ffffff;
+  
+}
+.contact_gmail{
+  text-align: center;
+  font-size: 1.4em;
+}
+
+.contact_gmail1{
+  text-align: center;
+  font-size: 1.25em;
+}
+
+#gmail_icon{
+  width: 64px; /* Set the desired width */
+  height: 64px; /* Set the desired height */
+  background-color: #000000;
+}
+#instalink{
+  text-decoration: none;
+}
