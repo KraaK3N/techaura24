@@ -260,6 +260,13 @@ document.addEventListener('DOMContentLoaded', function() {
           <p>Curabitur sit amet justo vel erat vehicula sodales. Phasellus malesuada neque vel nibh interdum, nec laoreet risus cursus.</p>
           <a href="https://www.example.com" target="_blank" class="button-link">Register</a>
         `;
+        case 'contactnos':
+        return `
+          <h3 class="contact_headers">Event Coordinator</h3>
+          <p>Afreena : +91 9863565690 </p>
+          <h3 class="contact_headers">Asst. Event Coordinator </h3>
+          <p>Salangmongla : +91 9362793501</p>
+        `;
       // Add more cases for each event
       default:
         return '';
