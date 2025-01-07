@@ -136,16 +136,24 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
         case 'devent1':
         return `
-          <h2>Event 1</h2>
-          <img src="https://via.placeholder.com/200x200" alt="Event 1 Image">
-          <p>dontro dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet urna et orci vehicula varius.</p>
-          <p>Curabitur sit amet justo vel erat vehicula sodales. Phasellus malesuada neque vel nibh interdum, nec laoreet risus cursus.</p>
+          <h2>Code War</h2>
+          <h3>Guidlines:</h3>
+          <p></p>
+          
+          <p>1. Participants must be registered using the registration link provided.</p>
+          <p>2. All participants must provide their name and phone number along with their department. </p>
+          <p>3. Participants must be present at the venue 15 minutes before the event starts.</p>
+          <p>4. Competition will have 2 rounds.</p>
+          <p>Round 1: MCQ’s (Multiple Choice Questions) based questions based on C++, Java or python language. </p>
+          <p>Round 2: Top 15 participants will be selected from the first round for the further contest. </p>
+          <p> For more details refer the link below</p>
+          <p></p>
+          
           <a href="https://www.example.com" target="_blank" class="button-link">Register</a>
         `;
-      case 'devent2':
+        case 'devent2':
         return `
-          <h2>Event 2</h2>
+          <h2>Code Chef</h2>
           <img src="https://via.placeholder.com/200x200" alt="Event 1 Image">
           <p>castro dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet urna et orci vehicula varius.</p>
