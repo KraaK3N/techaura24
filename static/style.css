@@ -149,80 +149,55 @@ transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
 }
 
 #ge_card1{
-    background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/robot.jpg');   
+    background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/guidelines/mransmiss.png');   
 }
 #ge_card2{
-    background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/robot.jpg');    
+    background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/guidelines/voice.jpeg');    
 }
 #ge_card3{
-    background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/robot.jpg');    
+    background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/guidelines/battleofbands.webp');    
 }
 #ge_card4{
-    background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/robot.jpg');   
+    background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/guidelines/model\ making.jpg');   
 }
 #ge_card5{
-    background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/robot.jpg');    
+    background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/guidelines/painting.jpg');    
 }
 #ge_card6{
-    background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/robot.jpg');    
+    background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/guidelines/photography.jpg');    
 }
 #ge_card7{
-  background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/robot.jpg');    
+  background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/guidelines/math.jpg');    
 }
 #ge_card8{
-  background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/robot.jpg');    
+  background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/guidelines/spelingbee.jpeg');    
 }
 #ge_card9{
-  background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/robot.jpg');    
+  background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/guidelines/bridge.jpg');    
 }
 #ge_card10{
-  background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/robot.jpg');    
+  background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/guidelines/fashion.png');    
 }
 
 #de_card1{
-    background-image: linear-gradient(rgba(0,0,0,0.4),#000), url('../static/images/codewar.webp');
+    background-image: linear-gradient(rgba(0,0,0,0.4),#000), url('../static/images/guidelines/gunmaking.webp');
 }
 #de_card2{
-    background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/background.png');
+    background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/guidelines/biolab.webp');
 }
 #de_card3{
-    background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/background.png');
+    background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/codewar.webp');
 }
 #de_card4{
-    background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/background.png');
+    background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/guidelines/mud\ race.jpeg');
 }
 #de_card5{
-    background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/background.png');
-}
-#de_card6{
-    background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/background.png');
-}
-#de_card7{
-  background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/background.png');
-}
-#de_card8{
-  background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/background.png');
-}
-#de_card9{
-  background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/background.png');
-}
-#de_card10{
-  background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/background.png');
+    background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/images/guidelines/ppt.jpeg');
 }
 
 #es_card1{
   background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/eventsimage/mlbb.jpg');
 }
-#es_card2{
-  background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/eventsimage/bgmi.png');
-}
-#es_card3{
-  background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/eventsimage/fifa.png');
-}
-#es_card4{
-  background-image: linear-gradient(rgba(0,0,0,0.1),#000), url('../static/eventsimage/dota.png');
-}
-
 
 
 
