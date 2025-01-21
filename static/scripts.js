@@ -46,227 +46,116 @@ document.addEventListener('DOMContentLoaded', function() {
     switch (event) {
       case 'gevent1':
         return `
-          <h2>Event 1</h2>
-          <img src="https://via.placeholder.com/200x200" alt="Event 1 Image">
-          <p>dontro dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet urna et orci vehicula varius.</p>
-          <p>Curabitur sit amet justo vel erat vehicula sodales. Phasellus malesuada neque vel nibh interdum, nec laoreet risus cursus.</p>
-          <a href="https://www.example.com" target="_blank" class="button-link">Register</a>
+          <h2>Mr & Miss Techaura</h2>
+          <img class="event_guidelines" src="../static/images/guidelines/mr and miss techaura guide.jpeg">
+          <p>For more details click below</p>
+          <a href="https://forms.gle/mNrLbEjqSG2Td7QX6" target="_blank" class="button-link">Register</a>
         `;
       case 'gevent2':
         return `
-          <h2>Event 2</h2>
-          <img src="https://via.placeholder.com/200x200" alt="Event 1 Image">
-          <p>castro dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet urna et orci vehicula varius.</p>
-          <p>Curabitur sit amet justo vel erat vehicula sodales. Phasellus malesuada neque vel nibh interdum, nec laoreet risus cursus.</p>
-          <a href="https://www.example.com" target="_blank" class="button-link">Register</a>
+          <h2>Voice of Techaura</h2>
+          <img class="event_guidelines" src="../static/images/guidelines/voice of techaura guide.jpeg">
+          <p>For more details click below</p>
+          <a href="https://forms.gle/c7mCQCKPr9fhVRuV6" target="_blank" class="button-link">Register</a>
         `;
         case 'gevent3':
         return `
-          <h2>Event 3</h2>
-          <img src="https://via.placeholder.com/200x200" alt="Event 1 Image">
-          <p>dontro dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet urna et orci vehicula varius.</p>
-          <p>Curabitur sit amet justo vel erat vehicula sodales. Phasellus malesuada neque vel nibh interdum, nec laoreet risus cursus.</p>
-          <a href="https://www.example.com" target="_blank" class="button-link">Register</a>
+          <h2>Battle Of Bands</h2>
+          <img class="event_guidelines" src="../static/images/guidelines/battle of bands guide.jpeg">
+          <p>For more details click below</p>
+          <a href="https://forms.gle/RvRVEfM5oHrdTQmM7" target="_blank" class="button-link">Register</a>
         `;
         case 'gevent4':
         return `
-          <h2>Event 4</h2>
-          <img src="https://via.placeholder.com/200x200" alt="Event 1 Image">
-          <p>dontro dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet urna et orci vehicula varius.</p>
-          <p>Curabitur sit amet justo vel erat vehicula sodales. Phasellus malesuada neque vel nibh interdum, nec laoreet risus cursus.</p>
-          <a href="https://www.example.com" target="_blank" class="button-link">Register</a>
+         <h2>Model Presentation</h2>
+          <img class="event_guidelines" src="../static/images/guidelines/model presentation guide.jpeg">
+          <p>For more details click below</p>
+          <a href="https://forms.gle/QSdCimehhLoD5tSy6" target="_blank" class="button-link">Register</a>
         `;
         case 'gevent5':
         return `
-          <h2>Event 5</h2>
-          <img src="https://via.placeholder.com/200x200" alt="Event 1 Image">
-          <p>dontro dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet urna et orci vehicula varius.</p>
-          <p>Curabitur sit amet justo vel erat vehicula sodales. Phasellus malesuada neque vel nibh interdum, nec laoreet risus cursus.</p>
-          <a href="https://www.example.com" target="_blank" class="button-link">Register</a>
+         <h2>Painting</h2>
+          <img class="event_guidelines" src="../static/images/guidelines/painting guide.jpeg">
+          <p>For more details click below</p>
+          <a href="https://forms.gle/NohM42xNK89tuaWs7" target="_blank" class="button-link">Register</a>
         `;
         case 'gevent6':
         return `
-          <h2>Event 6</h2>
-          <img src="https://via.placeholder.com/200x200" alt="Event 1 Image">
-          <p>dontro dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet urna et orci vehicula varius.</p>
-          <p>Curabitur sit amet justo vel erat vehicula sodales. Phasellus malesuada neque vel nibh interdum, nec laoreet risus cursus.</p>
-          <a href="https://www.example.com" target="_blank" class="button-link">Register</a>
+         <h2>Photography </h2>
+          <img class="event_guidelines" src="../static/images/guidelines/Photography guide.jpeg">
+          <p>For more details click below</p>
+          <a href="https://forms.gle/E6xokesiXy7EJj6DA" target="_blank" class="button-link">Register</a>
         `;
         case 'gevent7':
         return `
-          <h2>Event 6</h2>
-          <img src="https://via.placeholder.com/200x200" alt="Event 1 Image">
-          <p>dontro dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet urna et orci vehicula varius.</p>
-          <p>Curabitur sit amet justo vel erat vehicula sodales. Phasellus malesuada neque vel nibh interdum, nec laoreet risus cursus.</p>
-          <a href="https://www.example.com" target="_blank" class="button-link">Register</a>
+          <h2>Mental Math</h2>
+          <img class="event_guidelines" src="../static/images/guidelines/mental math guide.jpeg">
+          <p>For more details click below</p>
+          <a href="https://forms.gle/zGsveswVT3onK7Jx6" target="_blank" class="button-link">Register</a>
         `;
         case 'gevent8':
         return `
-          <h2>Event 6</h2>
-          <img src="https://via.placeholder.com/200x200" alt="Event 1 Image">
-          <p>dontro dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet urna et orci vehicula varius.</p>
-          <p>Curabitur sit amet justo vel erat vehicula sodales. Phasellus malesuada neque vel nibh interdum, nec laoreet risus cursus.</p>
-          <a href="https://www.example.com" target="_blank" class="button-link">Register</a>
+          <h2>Spelling Bee</h2>
+          <img class="event_guidelines" src="../static/images/guidelines/Spelling bee guide.jpeg">
+          <p>For more details click below</p>
+          <a href="https://forms.gle/BDGSyhZxvargTrkc9" target="_blank" class="button-link">Register</a>
         `;
         case 'gevent9':
         return `
-          <h2>Event 6</h2>
-          <img src="https://via.placeholder.com/200x200" alt="Event 1 Image">
-          <p>dontro dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet urna et orci vehicula varius.</p>
-          <p>Curabitur sit amet justo vel erat vehicula sodales. Phasellus malesuada neque vel nibh interdum, nec laoreet risus cursus.</p>
-          <a href="https://www.example.com" target="_blank" class="button-link">Register</a>
+         <h2>Truss Bridge</h2>
+          <img class="event_guidelines" src="../static/images/guidelines/truss bridge guide.jpeg">
+          <p>For more details click below</p>
+          <a href="https://forms.gle/sp7yKVfRQYchogP69" target="_blank" class="button-link">Register</a>
         `;
         case 'gevent10':
         return `
-          <h2>Event 6</h2>
-          <img src="https://via.placeholder.com/200x200" alt="Event 1 Image">
-          <p>dontro dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet urna et orci vehicula varius.</p>
-          <p>Curabitur sit amet justo vel erat vehicula sodales. Phasellus malesuada neque vel nibh interdum, nec laoreet risus cursus.</p>
-          <a href="https://www.example.com" target="_blank" class="button-link">Register</a>
+         <h2>Recycle Fashion</h2>
+          <img class="event_guidelines" src="../static/images/guidelines/recycled fashion guide.jpeg">
+          <p>For more details click below</p>
+          <a href="https://forms.gle/vq5xrVR6N3TsJZ7KA" target="_blank" class="button-link">Register</a>
         `;
         case 'devent1':
         return `
-          <h2>Code War</h2>
-          <h3>Guidlines:</h3>
-          <p></p>
-          
-          <p>1. Participants must be registered using the registration link provided.</p>
-          <p>2. All participants must provide their name and phone number along with their department. </p>
-          <p>3. Participants must be present at the venue 15 minutes before the event starts.</p>
-          <p>4. Competition will have 2 rounds.</p>
-          <p>Round 1: MCQ’s (Multiple Choice Questions) based questions based on C++, Java or python language. </p>
-          <p>Round 2: Top 15 participants will be selected from the first round for the further contest. </p>
-          <p> For more details refer the link below</p>
-          <p></p>
-          
-          <a href="https://www.example.com" target="_blank" class="button-link">Register</a>
+          <h2>DIY Gun Making</h2>
+          <img class="event_guidelines" src="../static/images/guidelines/gun making guide.jpeg">
+          <p>For more details click below</p>
+          <a href="https://forms.gle/fG26f4Cy4cgYkAXP7" target="_blank" class="button-link">Register</a>
         `;
         case 'devent2':
         return `
-          <h2>Code Chef</h2>
-          <img src="https://via.placeholder.com/200x200" alt="Event 1 Image">
-          <p>castro dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet urna et orci vehicula varius.</p>
-          <p>Curabitur sit amet justo vel erat vehicula sodales. Phasellus malesuada neque vel nibh interdum, nec laoreet risus cursus.</p>
-          <a href="https://www.example.com" target="_blank" class="button-link">Register</a>
+          <h2>Bio Lab</h2>
+          <img class="event_guidelines" src="../static/images/guidelines/biolab guide.jpeg">
+          <p>For more details click below</p>
+          <a href="https://forms.gle/t3a1dJ6shbqENTa69" target="_blank" class="button-link">Register</a>
         `;
         case 'devent3':
         return `
-          <h2>Event 3</h2>
-          <img src="https://via.placeholder.com/200x200" alt="Event 1 Image">
-          <p>dontro dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet urna et orci vehicula varius.</p>
-          <p>Curabitur sit amet justo vel erat vehicula sodales. Phasellus malesuada neque vel nibh interdum, nec laoreet risus cursus.</p>
-          <a href="https://www.example.com" target="_blank" class="button-link">Register</a>
+          <h2>Code War</h2>
+          <img class="event_guidelines" src="../static/images/guidelines/codewars guide.jpeg">
+          <p>For more details click below</p>
+          <a href="https://forms.gle/D4v7PNWbWXYNpE8G7" target="_blank" class="button-link">Register</a>
         `;
         case 'devent4':
         return `
-          <h2>Event 4</h2>
-          <img src="https://via.placeholder.com/200x200" alt="Event 1 Image">
-          <p>dontro dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet urna et orci vehicula varius.</p>
-          <p>Curabitur sit amet justo vel erat vehicula sodales. Phasellus malesuada neque vel nibh interdum, nec laoreet risus cursus.</p>
-          <a href="https://www.example.com" target="_blank" class="button-link">Register</a>
+          <h2>Mud Race (Robotics)</h2>
+          <img class="event_guidelines" src="../static/images/guidelines/mud race guide.jpeg">
+          <p>For more details click below</p>
+          <a href="https://forms.gle/EgvemoyScj3KWp41A" target="_blank" class="button-link">Register</a>
         `;
         case 'devent5':
         return `
-          <h2>Event 5</h2>
-          <img src="https://via.placeholder.com/200x200" alt="Event 1 Image">
-          <p>dontro dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet urna et orci vehicula varius.</p>
-          <p>Curabitur sit amet justo vel erat vehicula sodales. Phasellus malesuada neque vel nibh interdum, nec laoreet risus cursus.</p>
-          <a href="https://www.example.com" target="_blank" class="button-link">Register</a>
-        `;
-        case 'devent6':
-        return `
-          <h2>Event 6</h2>
-          <img src="https://via.placeholder.com/200x200" alt="Event 1 Image">
-          <p>dontro dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet urna et orci vehicula varius.</p>
-          <p>Curabitur sit amet justo vel erat vehicula sodales. Phasellus malesuada neque vel nibh interdum, nec laoreet risus cursus.</p>
-          <a href="https://www.example.com" target="_blank" class="button-link">Register</a>
-        `;
-        case 'devent7':
-        return `
-          <h2>Event 6</h2>
-          <img src="https://via.placeholder.com/200x200" alt="Event 1 Image">
-          <p>dontro dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet urna et orci vehicula varius.</p>
-          <p>Curabitur sit amet justo vel erat vehicula sodales. Phasellus malesuada neque vel nibh interdum, nec laoreet risus cursus.</p>
-          <a href="https://www.example.com" target="_blank" class="button-link">Register</a>
-        `;
-        case 'devent8':
-        return `
-          <h2>Event 6</h2>
-          <img src="https://via.placeholder.com/200x200" alt="Event 1 Image">
-          <p>dontro dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet urna et orci vehicula varius.</p>
-          <p>Curabitur sit amet justo vel erat vehicula sodales. Phasellus malesuada neque vel nibh interdum, nec laoreet risus cursus.</p>
-          <a href="https://www.example.com" target="_blank" class="button-link">Register</a>
-        `;
-        case 'devent9':
-        return `
-          <h2>Event 6</h2>
-          <img src="https://via.placeholder.com/200x200" alt="Event 1 Image">
-          <p>dontro dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet urna et orci vehicula varius.</p>
-          <p>Curabitur sit amet justo vel erat vehicula sodales. Phasellus malesuada neque vel nibh interdum, nec laoreet risus cursus.</p>
-          <a href="https://www.example.com" target="_blank" class="button-link">Register</a>
-        `;
-        case 'devent10':
-        return `
-          <h2>Event 6</h2>
-          <img src="https://via.placeholder.com/200x200" alt="Event 1 Image">
-          <p>dontro dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet urna et orci vehicula varius.</p>
-          <p>Curabitur sit amet justo vel erat vehicula sodales. Phasellus malesuada neque vel nibh interdum, nec laoreet risus cursus.</p>
-          <a href="https://www.example.com" target="_blank" class="button-link">Register</a>
+          <h2>PPT Presentation</h2>
+          <img class="event_guidelines" src="../static/images/guidelines/ppt guide.jpeg">
+          <p>For more details click below</p>
+          <a href="https://forms.gle/rraNpXEXR2kQvvFU6" target="_blank" class="button-link">Register</a>
         `;
         case 'esevent1':
         return `
-          <h2>Event 6</h2>
-          <img src="https://via.placeholder.com/200x200" alt="Event 1 Image">
-          <p>dontro dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet urna et orci vehicula varius.</p>
-          <p>Curabitur sit amet justo vel erat vehicula sodales. Phasellus malesuada neque vel nibh interdum, nec laoreet risus cursus.</p>
-          <a href="https://www.example.com" target="_blank" class="button-link">Register</a>
-        `;
-        case 'esevent2':
-        return `
-          <h2>Event 6</h2>
-          <img src="https://via.placeholder.com/200x200" alt="Event 1 Image">
-          <p>dontro dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet urna et orci vehicula varius.</p>
-          <p>Curabitur sit amet justo vel erat vehicula sodales. Phasellus malesuada neque vel nibh interdum, nec laoreet risus cursus.</p>
-          <a href="https://www.example.com" target="_blank" class="button-link">Register</a>
-        `;
-        case 'esevent3':
-        return `
-          <h2>Event 6</h2>
-          <img src="https://via.placeholder.com/200x200" alt="Event 1 Image">
-          <p>dontro dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet urna et orci vehicula varius.</p>
-          <p>Curabitur sit amet justo vel erat vehicula sodales. Phasellus malesuada neque vel nibh interdum, nec laoreet risus cursus.</p>
-          <a href="https://www.example.com" target="_blank" class="button-link">Register</a>
-        `;
-        case 'esevent4':
-        return `
-          <h2>Event 6</h2>
-          <img src="https://via.placeholder.com/200x200" alt="Event 1 Image">
-          <p>dontro dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet urna et orci vehicula varius.</p>
-          <p>Curabitur sit amet justo vel erat vehicula sodales. Phasellus malesuada neque vel nibh interdum, nec laoreet risus cursus.</p>
-          <a href="https://www.example.com" target="_blank" class="button-link">Register</a>
+          <h2>MLBB</h2>
+          <img class="event_guidelines" src="../static/images/guidelines/mlbb guide.jpeg">
+          <p>NOTE:   The qualifier rounds will be conducted online, while only the final round will take place at the venue.</p>
+          <p>For more details click below</p>
+          <a href="https://forms.gle/UwFnu1xcKggLrgkAA" target="_blank" class="button-link">Register</a>
         `;
         case 'contactnos':
         return `
