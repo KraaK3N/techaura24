@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <title>Techaura 2024</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 1rem;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 97%;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #ededed;
+            font-family: sans-serif;
+            font-weight: 400;
+        }
+
+        .navbar-brand img {
+            width: 30px;
+            height: 24px;
+            margin-right: 0.5rem;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 4rem;
+            margin-right: 5%;
+        }
+
+        .nav-link {
+            color: #ffffff;
+            font-family: Sans-serif;
+            font-size: 17px;
+            text-decoration: none;
+            transition: color 0.3s ease-out;
+        }
+
+        .nav-link:hover {
+            color: #ea8ffc;
+        }
+
+        .navbar-toggler {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        #navbartoggler {
+            color: white;
+            font-size: 24px;
+        }
+
+        .footer {
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        .footer p {
+            color: #e5e7eb;
+            font-family: Arial, sans-serif;
+            font-size: 1.1em;
+        }
+
+        #text-sm {
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 1.5em;
+            text-align: center;
+            margin-top: 10%;
+            transition: margin-top 0.3s ease-out;
+        }
+        #navlogotext {
+            color : #ededed;
+            font-family: sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .navbar-toggler {
+                display: block;
+            }
+
+            .container {
+                flex-wrap: wrap;
+            }
+
+            .nav-menu {
+                display: block;
+                width: 100%;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease-out;
+                /* Removed the background-color and backdrop-filter here */
+            }
+
+            .nav-menu li {
+                padding: 1rem;
+                text-align: start;
+                opacity: 0;
+                transform: translateY(-20px);
+                transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+            }
+
+            .nav-menu.active {
+                max-height: 300px;
+            }
+
+            .nav-menu.active + #text-sm {
+                margin-top: calc(10% + 300px);
+            }
+
+            .nav-menu.active li {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            .nav-menu li:nth-child(1) { transition-delay: 0.1s; }
+            .nav-menu li:nth-child(2) { transition-delay: 0.2s; }
+            .nav-menu li:nth-child(3) { transition-delay: 0.3s; }
+            .nav-menu li:nth-child(4) { transition-delay: 0.4s; }
+
+            #main-content {
+                transition: margin-top 0.3s ease-out;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="../static/images/techaura.png" alt="Logo">
+                <div id="navlogotext">Techaura 2024</div>
+            </a>
+            <button class="navbar-toggler" onclick="toggleMenu()">
+               <<svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="30px"><path d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"/></svg>>
+            </button>
+            <ul class="nav-menu">
+                <li><a class="nav-link" href="/">Home</a></li>
+                <li><a class="nav-link" href="/events">Events</a></li>
+                <li><a class="nav-link" href="/gallery">Gallery</a></li>
+                <li><a class="nav-link" href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <p id="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque neque temporibus dolorum, harum ipsa rerum, reprehenderit provident quidem adipisci velit enim, itaque error debitis sint facere aspernatur laboriosam inventore ex?</p>
+    <footer class="footer">
+        <p>&copy; 2024 TechAura. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            navMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

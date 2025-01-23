@@ -1,0 +1,921 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  
+
+	  <title>Techaura 2024</title>
+	  <style>
+		  * {
+			  margin: 0;
+			  padding: 0;
+			  box-sizing: border-box;
+		  }
+  
+		  body {
+			  background-color: black;
+			  min-height: 100vh;
+			  display: flex;
+			  flex-direction: column;
+		  }
+  
+		  .navbar {
+			  background-color: rgba(255, 255, 255, 0.05);
+			  backdrop-filter: blur(10px);
+
+			  padding: 1rem;
+		  }
+  
+		  .container {
+			  display: flex;
+			  justify-content: space-between;
+			  align-items: center;
+			  max-width: 97%;
+			  margin: 0 auto;
+			  padding: 0 1rem;
+		  }
+  
+		  .navbar-brand {
+			  display: flex;
+			  align-items: center;
+			  text-decoration: none;
+			  color: #ededed;
+			  font-family: sans-serif;
+			  font-weight: 400;
+		  }
+  
+		  .navbar-brand img {
+			  width: 30px;
+			  height: 24px;
+			  margin-right: 0.5rem;
+		  }
+  
+		  .nav-menu {
+			  display: flex;
+			  list-style: none;
+			  gap: 4rem;
+			  margin-right: 5%;
+		  }
+  
+		  .nav-link {
+			  color: #ffffff;
+			  font-family: Sans-serif;
+			  font-size: 17px;
+			  text-decoration: none;
+			  transition: color 0.3s ease-out;
+		  }
+  
+		  .nav-link:hover {
+			  color: #ea8ffc;
+		  }
+  
+		  .navbar-toggler {
+			  display: none;
+			  background: none;
+			  border: none;
+			  cursor: pointer;
+		  }
+  
+		  #navbartoggler {
+			  color: white;
+			  font-size: 24px;
+		  }
+  
+		  .footer {
+			  width: 100%;
+			  padding: 20px 0;
+			  text-align: center;
+			  margin-top: auto;
+		  }
+  
+		  .footer p {
+			  color: #e5e7eb;
+			  font-family: Arial, sans-serif;
+			  font-size: 1.1em;
+		  }
+  
+		  #text-sm {
+			  color: white;
+			  font-family: Arial, sans-serif;
+			  font-size: 1.5em;
+			  text-align: center;
+			  margin-top: 10%;
+			  transition: margin-top 0.3s ease-out;
+		  }
+		  #navlogotext {
+			  color : #ededed;
+			  font-family: sans-serif;
+			  font-weight: 400;
+			  font-size: 20px;
+		  }
+  
+		  @media (max-width: 768px) {
+			  .navbar-toggler {
+				  display: block;
+			  }
+  
+			  .container {
+				  flex-wrap: wrap;
+			  }
+  
+			  .nav-menu {
+				  display: block;
+				  width: 100%;
+				  max-height: 0;
+				  overflow: hidden;
+				  transition: max-height 0.3s ease-out;
+				  /* Removed the background-color and backdrop-filter here */
+			  }
+  
+			  .nav-menu li {
+				  padding: 1rem;
+				  text-align: start;
+				  opacity: 0;
+				  transform: translateY(-20px);
+				  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+			  }
+  
+			  .nav-menu.active {
+				  max-height: 300px;
+			  }
+  
+			  .nav-menu.active + #text-sm {
+				  margin-top: calc(10% + 300px);
+			  }
+  
+			  .nav-menu.active li {
+				  opacity: 1;
+				  transform: translateY(0);
+			  }
+  
+			  .nav-menu li:nth-child(1) { transition-delay: 0.1s; }
+			  .nav-menu li:nth-child(2) { transition-delay: 0.2s; }
+			  .nav-menu li:nth-child(3) { transition-delay: 0.3s; }
+			  .nav-menu li:nth-child(4) { transition-delay: 0.4s; }
+  
+			  #main-content {
+				  transition: margin-top 0.3s ease-out;
+			  }
+		  }
+	  </style>
+
+      <!-- Performance optimization: Preload critical resources -->
+      <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" as="style">
+	  <link rel="stylesheet" href="../static/style.css">
+      <!-- Core CSS -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+             colors: {
+                primary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                secondary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                accent: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+              },
+              fontFamily: {
+                sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                heading: ['Montserrat', 'Inter', 'system-ui', 'sans-serif'],
+              },
+              spacing: {
+                '18': '4.5rem',
+                '22': '5.5rem',
+                '30': '7.5rem',
+              },
+              maxWidth: {
+                '8xl': '88rem',
+                '9xl': '96rem',
+              },
+              animation: {
+                'fade-in': 'fadeIn 0.5s ease-in',
+                'fade-out': 'fadeOut 0.5s ease-out',
+                'slide-up': 'slideUp 0.5s ease-out',
+                'slide-down': 'slideDown 0.5s ease-out',
+                'slide-left': 'slideLeft 0.5s ease-out',
+                'slide-right': 'slideRight 0.5s ease-out',
+                'scale-in': 'scaleIn 0.5s ease-out',
+                'scale-out': 'scaleOut 0.5s ease-out',
+                'spin-slow': 'spin 3s linear infinite',
+                'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'bounce-slow': 'bounce 3s infinite',
+                'float': 'float 3s ease-in-out infinite',
+              },
+              keyframes: {
+                fadeIn: {
+                  '0%': { opacity: '0' },
+                  '100%': { opacity: '1' },
+                },
+                fadeOut: {
+                  '0%': { opacity: '1' },
+                  '100%': { opacity: '0' },
+                },
+                slideUp: {
+                  '0%': { transform: 'translateY(20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideDown: {
+                  '0%': { transform: 'translateY(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideLeft: {
+                  '0%': { transform: 'translateX(20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                slideRight: {
+                  '0%': { transform: 'translateX(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                scaleIn: {
+                  '0%': { transform: 'scale(0.9)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                scaleOut: {
+                  '0%': { transform: 'scale(1.1)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                float: {
+                  '0%, 100%': { transform: 'translateY(0)' },
+                  '50%': { transform: 'translateY(-10px)' },
+                },
+              },
+              aspectRatio: {
+                'portrait': '3/4',
+                'landscape': '4/3',
+                'ultrawide': '21/9',
+              },
+            },
+          },
+          variants: {
+            extend: {
+              opacity: ['disabled'],
+              cursor: ['disabled'],
+              backgroundColor: ['active', 'disabled'],
+              textColor: ['active', 'disabled'],
+            },
+          },
+        }
+      </script>
+
+      <!-- Utilities and Components -->
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
+      
+      <!-- Optimized Font Loading -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+      
+      <!-- Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- Base Styles -->
+      <style>
+
+      * {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Webkit browsers like Chrome, Safari, newer Edge */
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+          width: 0px;
+        }
+        
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+          background: #888;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+          background: #666;
+        }
+
+        /* Remove tap highlight on mobile */
+        * {
+          -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Improve text rendering */
+        body {
+          text-rendering: optimizeLegibility;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Focus outline styles */
+        :focus-visible {
+          outline: 2px solid currentColor;
+          outline-offset: 2px;
+        }
+
+        /* Print styles */
+        @media print {
+          .no-print {
+            display: none !important;
+          }
+          
+          a[href]:after {
+            content: " (" attr(href) ")";
+          }
+        }
+      </style>
+
+      <!-- Enhanced Image Handler -->
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const img = entry.target;
+                if (img.dataset.src) {
+                  const tempImage = new Image();
+                  tempImage.onload = () => {
+                    img.src = img.dataset.src;
+                    img.classList.remove('opacity-0');
+                    img.classList.add('opacity-100');
+                  };
+                  tempImage.src = img.dataset.src;
+                  img.removeAttribute('data-src');
+                  observer.unobserve(img);
+                }
+              }
+            });
+          }, {
+            rootMargin: '50px 0px',
+            threshold: 0.01
+          });
+
+          const loadImage = (img) => {
+            if ('loading' in HTMLImageElement.prototype) {
+              img.loading = 'lazy';
+            }
+            
+            img.classList.add('transition-opacity', 'duration-300', 'opacity-0');
+            
+            img.onerror = () => {
+              const width = img.getAttribute('width') || img.clientWidth || 300;
+              const height = img.getAttribute('height') || img.clientHeight || 200;
+              img.src = `https://placehold.co/${width}x${height}/DEDEDE/555555?text=Image+Unavailable`;
+              img.alt = 'Image unavailable';
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100', 'error-image');
+            };
+
+            if (img.dataset.src) {
+              imageObserver.observe(img);
+            } else {
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100');
+            }
+          };
+
+          document.querySelectorAll('img[data-src], img:not([data-src])').forEach(loadImage);
+
+          // Watch for dynamically added images
+          new MutationObserver((mutations) => {
+            mutations.forEach(mutation => {
+              mutation.addedNodes.forEach(node => {
+                if (node.nodeType === 1) {
+                  if (node.tagName === 'IMG') {
+                    loadImage(node);
+                  }
+                  node.querySelectorAll('img').forEach(loadImage);
+                }
+              });
+            });
+          }).observe(document.body, {
+            childList: true,
+            subtree: true
+          });
+        });
+
+        // Performance monitoring
+        if ('performance' in window && 'PerformanceObserver' in window) {
+          // Create performance observer
+          const observer = new PerformanceObserver((list) => {
+            const entries = list.getEntries();
+            entries.forEach((entry) => {
+              if (entry.entryType === 'largest-contentful-paint') {
+                // console.log(`LCP: ${entry.startTime}ms`);
+              }
+              if (entry.entryType === 'first-input') {
+                // console.log(`FID: ${entry.processingStart - entry.startTime}ms`);
+              }
+              if (entry.entryType === 'layout-shift') {
+                // console.log(`CLS: ${entry.value}`);
+              }
+            });
+          });
+
+          // Observe performance metrics
+          observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] });
+
+          // Log basic performance metrics
+          window.addEventListener('load', () => {
+            const timing = performance.getEntriesByType('navigation')[0];
+            console.log({
+              'DNS Lookup': timing.domainLookupEnd - timing.domainLookupStart,
+              'TCP Connection': timing.connectEnd - timing.connectStart,
+              'DOM Content Loaded': timing.domContentLoadedEventEnd - timing.navigationStart,
+              'Page Load': timing.loadEventEnd - timing.navigationStart
+            });
+          });
+        }
+
+        // Handle offline/online status
+        window.addEventListener('online', () => {
+          document.body.classList.remove('offline');
+          console.log('Connection restored');
+        });
+        
+        window.addEventListener('offline', () => {
+          document.body.classList.add('offline');
+          console.log('Connection lost');
+        });
+      </script>
+   </head>
+   <body class="antialiased text-gray-800 min-h-screen flex flex-col">
+	
+	<nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="../static/images/techaura.png" alt="Logo">
+                <div id="navlogotext">Techaura 2024</div>
+            </a>
+            <button class="navbar-toggler" onclick="toggleMenu()">
+               <<svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="30px"><path d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"/></svg>>
+            </button>
+            <ul class="nav-menu">
+                <li><a class="nav-link" href="/">Home</a></li>
+                <li><a class="nav-link" href="/events">Events</a></li>
+                <li><a class="nav-link" href="/gallery">Gallery</a></li>
+                <li><a class="nav-link" href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            navMenu.classList.toggle('active');
+        }
+    </script>
+
+      <!-- Skip to main content link for accessibility -->
+      <a href="#main-content" 
+         class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black">
+         Skip to main content
+      </a>
+
+      <!-- Header -->
+      <header class="relative z-50 bg-white dark:bg-gray-900">
+        <!-- Header content goes here -->
+      </header>
+
+      <!-- Main content area -->
+      <main id="main-content" class="flex-1 relative ">
+        <!-- Content will be injected here -->
+      </main>
+
+      <!-- {bodyScripts} -->
+
+   </body>
+</html><element id="6186802f-923b-4dca-809e-7cd85f981d8f" data-section-id="6186802f-923b-4dca-809e-7cd85f981d8f">
+
+
+                <htmlcode id="el-6y19p8zz">
+<div id="root">
+  <nav id="navbar" class="bg-neutral-900 fixed w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="el-ahxymepx">
+      
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-neutral-900">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3" id="el-l47ynlco">
+        <a href="#" class="text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-neutral-700" id="el-m5owm508">Home</a>
+        <a href="#" class="text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-neutral-700" id="el-gwo2ljoc">Events</a>
+        <a href="#" class="text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-neutral-700" id="el-a3ckuf78">Schedule</a>
+        <a href="#" class="text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-neutral-700" id="el-j7gua4px">About</a>
+        <a href="#" class="bg-indigo-600 block text-white px-3 py-2 rounded-md text-base font-medium hover:bg-indigo-500" id="el-7c2hldl2">Register</a>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</div>
+</htmlcode>
+              </element><element id="113a3d1c-592b-4767-838a-19a07ab3ed2e" data-section-id="113a3d1c-592b-4767-838a-19a07ab3ed2e">
+
+
+                
+                <htmlcode id="el-022ul8ty">
+<div id="root">
+  <section id="hero" class="bg-neutral-900 min-h-screen pt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between h-[80vh]" id="el-y3yrtyc7">
+      <div class="text-center md:text-left md:w-1/2 space-y-6" id="el-y1z78wdv">
+        <h1 class="text-4xl md:text-6xl font-bold text-white animate__animated animate__fadeInUp" id="el-77o07b0c">
+          TechAura 2024
+          <span class="block text-indigo-500" id="el-dtocsmv3">National-Level Tech Fest</span>
+        </h1>
+        <p class="text-xl text-gray-300 animate__animated animate__fadeInUp animate__delay-1s" id="el-3xxsxpn7">
+          Immerse yourself in thrilling performances and events at the technical festival. Join us for three unforgettable days of innovation, competition, and excellence!
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start animate__animated animate__fadeInUp animate__delay-2s" id="el-mqf834om">
+          <a href="#events" class="px-8 py-3 bg-indigo-600 text-white rounded-full text-lg font-semibold hover:bg-indigo-700 transition duration-300" id="el-1xqe9ofu">
+            Explore Events
+          </a>
+        </div>
+        <div class="flex gap-6 justify-center md:justify-start mt-8 animate__animated animate__fadeInUp animate__delay-3s" id="el-b4efpeco">
+          <img src="techaura-theme.png" alt="" class="w-100 h-10" >
+        </div>
+      </div>
+      
+      <div class="md:w-1/2 mt-8 md:mt-0 animate__animated animate__fadeIn" id="el-b8grqm6s">
+        <div class="relative" id="el-fz43nl0o">
+          <div class="absolute -inset-1 bg-indigo-500 rounded-lg blur opacity-30" id="el-11qb733y"></div>
+          <div class="relative bg-neutral-800 p-6 rounded-lg border border-indigo-500/20" id="el-tvrqestt">
+            <div class="text-center space-y-4" id="el-8q3pinyj">
+              <div class="text-2xl font-bold text-white" id="el-ewk70bv6">Event Countdown</div>
+              <div class="grid grid-cols-4 gap-4" id="countdown">
+                <div class="bg-neutral-700 p-3 rounded-lg" id="el-ls3npc5t">
+                  <div class="text-2xl font-bold text-indigo-500" id="days">29</div>
+                  <div class="text-gray-400 text-sm" id="el-1lkscu1w">Days</div>
+                </div>
+                <div class="bg-neutral-700 p-3 rounded-lg" id="el-770qcebz">
+                  <div class="text-2xl font-bold text-indigo-500" id="hours">23</div>
+                  <div class="text-gray-400 text-sm" id="el-9jom2h4j">Hours</div>
+                </div>
+                <div class="bg-neutral-700 p-3 rounded-lg" id="el-ccawa3c1">
+                  <div class="text-2xl font-bold text-indigo-500" id="minutes">59</div>
+                  <div class="text-gray-400 text-sm" id="el-f5l9t03d">Minutes</div>
+                </div>
+                <div class="bg-neutral-700 p-3 rounded-lg" id="el-ninjhz6q">
+                  <div class="text-2xl font-bold text-indigo-500" id="seconds">59</div>
+                  <div class="text-gray-400 text-sm" id="el-gun09dig">Seconds</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Set the countdown end date to February 26, 2025
+    const countDownDate = new Date("February 26, 2025 00:00:00").getTime();
+
+    const countdown = setInterval(function() {
+      const now = new Date().getTime();
+      const distance = countDownDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("days").innerHTML = String(days).padStart(2, '0');
+      document.getElementById("hours").innerHTML = String(hours).padStart(2, '0');
+      document.getElementById("minutes").innerHTML = String(minutes).padStart(2, '0');
+      document.getElementById("seconds").innerHTML = String(seconds).padStart(2, '0');
+
+      if (distance < 0) {
+        clearInterval(countdown);
+        document.getElementById("countdown").innerHTML = "EVENT STARTED";
+      }
+    }, 1000);
+  </script>
+</div>
+</htmlcode>
+              
+              </element><element id="39907b85-6f57-41a2-8368-a9a7c4e5ec3a" data-section-id="39907b85-6f57-41a2-8368-a9a7c4e5ec3a">
+
+<htmlCode>
+<div id="root">
+  <section id="about" class="bg-white py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-neutral-900 mb-4 animate__animated animate__fadeInUp">About TechAura</h2>
+        <div class="w-24 h-1 bg-indigo-600 mx-auto"></div>
+      </div>
+
+      <div class="max-w-3xl mx-auto px-8">
+        <div class="text-neutral-600 leading-relaxed text-lg animate__animated animate__fadeIn">
+          <p class="mb-6">
+            <em>Techaura</em> is a National-level technical festival organized by the final year students of the School of Engineering &amp; Technology, Nagaland University. The festival creates an atmosphere of technological innovation, encouraging individuals to showcase their potential through competitions, presentations, exhibitions, and seminars.
+          </p>
+          
+          <p class="mb-6">
+            More than just a celebration of technology and culture, Techaura serves as a platform to inspire students to become forward-thinking leaders and entrepreneurs. It challenges young minds to think beyond conventional boundaries and explore innovative ideas.
+          </p>
+          
+          <p>
+            Over the years, the festival has featured diverse events including Voice of Techaura, Beat Contest, Painting Competition, Ramen Eating Competitions, Esports, and Mr &amp; Miss Techaura - where the winner of Miss Techaura receives direct entry to the prestigious Nagaland Exotic Model Hunt by Blue Curves.
+          </p>
+        </div>
+      </div>  
+      </div>
+
+      <div class="mt-20 bg-neutral-50 rounded-2xl p-8 md:p-12 shadow-xl">
+        <div class="grid md:grid-cols-1 gap-12 items-center">
+          <div class="animate__animated animate__fadeInLeft">
+            <h3 class="text-3xl font-bold text-neutral-900 mb-6">Why Choose TechAura?</h3>
+            <div class="space-y-4">
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0">
+                  <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <p class="text-neutral-600">
+                  Tech Showcase: Techaura provides an exciting platform for tech enthusiasts, showcasing innovative projects, hosting dynamic events, and delivering exhilarating concert at end of the event.</p>
+              </div>
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0">
+                  <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <p class="text-neutral-600">Skill Development: The festival features various competitions and events that challenge participants and help them develop their skills in areas like coding, robotics, and design.</p>
+              </div>
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0">
+                  <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <p class="text-neutral-600">Unity in Diversity: As a premier national-level technical festival hosted in Nagaland, Techaura unites students from diverse backgrounds to collaborate, innovate, and immerse themselves in a rich blend of cultural and technological experiences.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode></element><element id="3b656459-70ab-4d81-a7e7-3472508b9fe6" data-section-id="3b656459-70ab-4d81-a7e7-3472508b9fe6">
+
+<htmlCode>
+<div id="root">
+  <section id="events" class="bg-neutral-900 py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-white mb-4 animate__animated animate__fadeInUp">Events</h2>
+        <div class="w-24 h-1 bg-indigo-600 mx-auto"></div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Hackathon Card -->
+        <div class="bg-neutral-800 rounded-xl overflow-hidden shadow-lg transform hover:-translate-y-2 transition duration-300 animate__animated animate__fadeInUp">
+          <div class="p-6">
+            <div class="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center mb-4">
+              <img src="../static/images/icons/crownicon.png" class="w-90 h-10" >
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Mr. & Miss Techaura</h3>
+            <p class="text-gray-400 mb-4">Step into the spotlight and showcase your charm, confidence, and talent in this ultimate quest for elegance and charisma</p>
+            <div class="flex justify-between items-center mb-4">
+              <span class="text-indigo-500">Prize Pool: ₹15,000/- And Hampers from Blue Curves</span>
+            </div>
+            <a href="https://forms.gle/mNrLbEjqSG2Td7QX6">
+              <button class="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition duration-300">Register Now</button>
+            </a>
+            </div>
+        </div>
+
+        <!-- Coding Competition Card -->
+        <div class="bg-neutral-800 rounded-xl overflow-hidden shadow-lg transform hover:-translate-y-2 transition duration-300 animate__animated animate__fadeInUp animate__delay-1s">
+          <div class="p-6">
+            <div class="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center mb-4">
+                <img src="../static/images/icons/musicicon.png" class="w-90 h-10" >
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Voice of TechAura</h3>
+            <p class="text-gray-400 mb-4">Let your voice be heard! Whether you bring soulful melodies, powerful vocals, or enchanting tunes, this singing competition is your chance to steal the spotlight and wow the crowd.</p>
+            <div class="flex justify-between items-center mb-4">
+              <span class="text-indigo-500">Prize: ₹15,000/-</span>
+            </div>
+            <a href="https://forms.gle/c7mCQCKPr9fhVRuV6">
+              <button class="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition duration-300">Register Now</button>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project Showcase Card -->
+        <div class="bg-neutral-800 rounded-xl overflow-hidden shadow-lg transform hover:-translate-y-2 transition duration-300 animate__animated animate__fadeInUp animate__delay-2s">
+          <div class="p-6">
+            <div class="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center mb-4">
+              <img src="../static/images/icons/guitaricon.png" class="w-90 h-10" >
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Battle of Bands</h3>
+            <p class="text-gray-400 mb-4">Bring the stage alive with electrifying rhythms, harmonies, and energy! Gather your bandmates and compete in the ultimate showdown of musical talent.</p>
+            <div class="flex justify-between items-center mb-4">
+              <span class="text-indigo-500">Prize: ₹25,000/-</span>
+             
+            </div>
+            <a href="https://forms.gle/RvRVEfM5oHrdTQmM7">
+              <button class="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition duration-300">Register Now</button>
+            </a></div>
+        </div>
+
+        <!-- CTF Challenge Card -->
+        <div class="bg-neutral-800 rounded-xl overflow-hidden shadow-lg transform hover:-translate-y-2 transition duration-300 animate__animated animate__fadeInUp">
+          <div class="p-6">
+            <div class="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center mb-4">
+              <img src="../static/images/icons/trussbridge.png" class="w-90 h-10" >
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Truss Bridge</h3>
+            <p class="text-gray-400 mb-4">
+              
+Unleash your engineering genius and build the ultimate bridge! Push your creativity, precision, and problem-solving skills to the limit as you design a model bridge to conquer the ultimate strength challenge.</p>
+            <div class="flex justify-between items-center mb-4">
+              <span class="text-indigo-500">Winner: ₹3,500/- Runner-Up: ₹1,500/-
+              </span>
+             
+            </div>
+            <a href="https://forms.gle/sp7yKVfRQYchogP69">
+              <button class="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition duration-300">Register Now</button>
+            </a></div>
+        </div>
+
+        <!-- AI/ML Workshop Card -->
+        <div class="bg-neutral-800 rounded-xl overflow-hidden shadow-lg transform hover:-translate-y-2 transition duration-300 animate__animated animate__fadeInUp animate__delay-1s">
+          <div class="p-6">
+            <div class="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center mb-4">
+              <img src="../static/images/icons/mlbbicon.png" class="w-90 h-10" >
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Mobile Legends Bang-Bang</h3>
+            <p class="text-gray-400 mb-4">Unleash your inner warrior in the Mobile Legends Bang Bang competition! Showcase your skills, strategy, and teamwork as you battle to dominate the battlefield and claim victory!</p>
+            <div class="flex justify-between items-center mb-4">
+              <span class="text-indigo-500">Winner: ₹20,000/-
+                And Hampers from Variety Merchandise</span>
+            </div>
+            <a href="https://forms.gle/UwFnu1xcKggLrgkAA">
+              <button class="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition duration-300">Register Now</button>
+            </a></div>
+        </div>
+
+        <!-- IoT Challenge Card -->
+        <div class="bg-neutral-800 rounded-xl overflow-hidden shadow-lg transform hover:-translate-y-2 transition duration-300 animate__animated animate__fadeInUp animate__delay-2s">
+          <div class="p-6">
+            <div class="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center mb-4">
+              <img src="../static/images/icons/painticon.png" class="w-90 h-10" >
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Painting</h3>
+            <p class="text-gray-400 mb-4">Tap into your creativity in the painting competition! Bring your vision to life, break artistic boundaries, and turn a blank canvas into a stunning masterpiece that inspires and captivates.</p>
+            <div class="flex justify-between items-center mb-4">
+              <span class="text-indigo-500">Winner: ₹3,500/- Runner-Up: ₹1,500/-
+              </span>
+            </div>
+            <a href="https://forms.gle/NohM42xNK89tuaWs7">
+              <button class="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition duration-300">Register Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="/events">
+        <button class="px-8 py-3 bg-indigo-600 text-white rounded-full text-lg font-semibold hover:bg-indigo-700 transition duration-300 animate__animated animate__fadeInUp">View All Events</button>
+        </a>
+      </div>
+    </div>
+
+    <script>
+      // Add click event listeners to all register buttons
+      document.querySelectorAll('button').forEach(button => {
+        button.addEventListener('click', function() {
+          // Add a ripple effect or any other interaction feedback
+          this.classList.add('animate__animated', 'animate__pulse');
+          setTimeout(() => {
+            this.classList.remove('animate__animated', 'animate__pulse');
+          }, 1000);
+        });
+      });
+    </script>
+  </section>
+</div>
+</htmlCode></element><element id="2513f6f4-b93b-4029-a170-23def096bc07" data-section-id="2513f6f4-b93b-4029-a170-23def096bc07">
+
+
+                <htmlcode id="el-hq5hfqb7">
+<div id="root">
+  
+</div>
+</htmlcode>
+              </element><element id="fbe82269-960f-46e3-9671-c4450dec1c37" data-section-id="fbe82269-960f-46e3-9671-c4450dec1c37">
+
+
+                <htmlcode id="el-mf9fqp9b">
+<div id="root">
+  
+</div>
+</htmlcode>
+              </element><element id="8aa3c908-ce02-45e7-8292-9ee62e21c13b" data-section-id="8aa3c908-ce02-45e7-8292-9ee62e21c13b">
+
+
+                <htmlcode id="el-jl8rl1mn">
+<div id="root">
+  
+</div>
+</htmlcode>
+              </element><element id="40e94a72-2db6-48b1-a287-498a8b8b2b75" data-section-id="40e94a72-2db6-48b1-a287-498a8b8b2b75">
+
+
+                <htmlcode id="el-p6jneh5v">
+<div id="root">
+  <footer class="footer">
+	<p>&copy; 2024 TechAura. All rights reserved.</p>
+	</footer>
+
+</div>
+</htmlcode>
+              </element><element id="a1c5d323-339d-4c25-a173-d681dc050cb3" data-section-id="a1c5d323-339d-4c25-a173-d681dc050cb3">
+
+
+                <htmlcode id="el-lh83s4ot">
+
+</htmlcode>
+              </element><element id="0fb1cd8f-3995-454f-afb4-51f0b5a1e27a" data-section-id="0fb1cd8f-3995-454f-afb4-51f0b5a1e27a">
+
+
+                <htmlcode id="el-wjm7i1x2">
+<div id="root">
+  
+</div>
+</htmlcode>
+              </element><element id="ef99f661-8bff-4604-8349-a001c90833ed" data-section-id="ef99f661-8bff-4604-8349-a001c90833ed">
+
+
+                <htmlcode id="el-lfgye4gw">
+<div id="root">
+    <section id="footer" class="bg-neutral-900 text-gray-300">
+        
+    </section>
+</div>
+</htmlcode>
+              </element>
+            <div id="page_complete">
+            <script>
+                console.log('Page complete');
+            </script>
+            </body>
+            </html>
+          
