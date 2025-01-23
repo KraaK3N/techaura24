@@ -60,7 +60,7 @@
 }
 @media (max-width: 600px){
     #event_text{
-        font-size: 6em;
+        font-size: 4em;
     }
     #event_des{
         font-size: 1.2em;
